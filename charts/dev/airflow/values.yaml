@@ -1,4 +1,3 @@
-airflow: true
 createUserJob:
   useHelmHooks: false
   applyCustomEnv: false
