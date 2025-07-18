@@ -21,6 +21,8 @@ serviceAccount:
 dags:
   gitSync:
     enabled: true
-    repo: ""
+    repo: "https://github.com/jevillanueva/jv-dags.git"
     branch: main
     subPath: "dags"
+    syncWait: 60
+    syncTimeout: 120
