@@ -1,0 +1,7 @@
+apiVersion: v2
+dependencies:
+- name: nginx
+  repository: file://../../../charts/dev/nginx
+  version: 0.1.0
+name: nginx
+version: 0.1.0
