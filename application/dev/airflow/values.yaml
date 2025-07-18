@@ -3,8 +3,6 @@ airflow:
   airflow:
     webserverSecretKey: "1b3e52610b3ea3436e01b1a97f3b8fcc"
     dags:
-      persistence:
-        enabled: false
       gitSync:
         enabled: true
         repo: "https://github.com/jevillanueva/jv-dags.git"
