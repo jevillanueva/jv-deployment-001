@@ -4,9 +4,8 @@ createUserJob:
 migrateDatabaseJob:
   useHelmHooks: false
   applyCustomEnv: false
-migrateDatabaseJob:
-    jobAnnotations:
-        "argocd.argoproj.io/hook": Sync
+  jobAnnotations:
+    "argocd.argoproj.io/hook": Sync
 webserverSecretKey: "42af9cc2d6ea694be0c699f11e415ea2"
 serviceAccount:
   # Specifies whether a service account should be created
