@@ -18,6 +18,8 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 dags:
+  persistence:
+    enabled: false
   gitSync:
     enabled: true
     repo: "https://github.com/jevillanueva/jv-dags.git"
@@ -25,4 +27,3 @@ dags:
     subPath: "dags"
     syncWait: 60
     syncTimeout: 120
-  path: /opt/airflow/dags/repo/dags 
