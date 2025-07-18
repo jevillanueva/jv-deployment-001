@@ -1,8 +1,3 @@
 airflow:
   enabled: true
   webserverSecretKey: "1b3e52610b3ea3436e01b1a97f3b8fcc"
-  serviceAccount:
-    create: true
-    automount: true
-    annotations: {}
-    name: ""
