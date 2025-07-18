@@ -25,3 +25,4 @@ dags:
     subPath: "dags"
     syncWait: 60
     syncTimeout: 120
+  path: /opt/airflow/dags/repo/dags 
