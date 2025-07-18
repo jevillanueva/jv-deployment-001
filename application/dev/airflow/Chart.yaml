@@ -1,0 +1,7 @@
+apiVersion: v2
+dependencies:
+- name: airflow
+  repository: file://../../../charts/dev/airflow
+  version: 1.16.0
+name: airflow
+version: 1.0.0
