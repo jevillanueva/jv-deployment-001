@@ -13,7 +13,7 @@ airflow:
         subPath: "dags"
         sshKeySecret: "airflow-ssh-secret"
     users:
-      - username: admin
+      - username: airflow
         role: Admin
         firstName: Admin
         lastName: User
