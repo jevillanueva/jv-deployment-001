@@ -1,6 +1,9 @@
 airflow:
   enabled: true
   airflow:
+    image:
+      repository: apache/airflow
+      tag: 3.0.2
     webserverSecretKeySecretName: "airflow-webserver-secret"
     dags:
       gitSync:
