@@ -5,7 +5,7 @@ airflow:
     dags:
       gitSync:
         enabled: true
-        repo: "git@github:jevillanueva/jv-dags.git"
+        repo: "git@github.com:jevillanueva/jv-dags.git"
         branch: main
         subPath: "dags"
         sshKeySecret: "airflow-ssh-secret"
