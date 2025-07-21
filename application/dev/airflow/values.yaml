@@ -1,10 +1,11 @@
 airflow:
   enabled: true
   airflow:
-    webserverSecretKey: "1b3e52610b3ea3436e01b1a97f3b8fcc"
+    webserverSecretKeySecretName: "airflow-webserver-secret"
     dags:
       gitSync:
         enabled: true
-        repo: "https://github.com/jevillanueva/jv-dags.git"
+        repo: "git@github:jevillanueva/jv-dags.git"
         branch: main
         subPath: "dags"
+        sshKeySecret: "airflow-ssh-secret"
