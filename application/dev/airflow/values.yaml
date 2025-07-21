@@ -12,20 +12,3 @@ airflow:
         branch: main
         subPath: "dags"
         sshKeySecret: "airflow-ssh-secret"
-    users:
-      - username: airflow
-        role: Admin
-        firstName: Admin
-        lastName: User
-        password: ${ADMIN_PASSWORD}
-        email: ${ADMIN_EMAIL}
-    usersTemplates:
-      ADMIN_PASSWORD:
-        kind: secret
-        name: airflow-admin-secret
-        key: password
-      ADMIN_EMAIL:
-        kind: secret
-        name: airflow-admin-secret
-        key: email
-    usersUpdate: true
