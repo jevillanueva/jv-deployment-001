@@ -2,7 +2,7 @@ airflow:
   enabled: true
   airflow:
     image:
-      repository: apache/airflow
+      repository: jevillanueva/airflow
       tag: 3.0.2
     webserverSecretKeySecretName: "airflow-webserver-secret"
     dags:
