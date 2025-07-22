@@ -1,9 +1,10 @@
 airflow:
   enabled: true
-  image:
-    repository: jevillanueva/airflow
-    tag: 3.0.2
   airflow:
+    images:
+      airflow:
+        repository: jevillanueva/airflow
+        tag: 3.0.2
     webserverSecretKeySecretName: "airflow-webserver-secret"
     dags:
       gitSync:
